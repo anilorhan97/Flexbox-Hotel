@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex; /*Item otomatik olarak inline-block gibi davranır.*/
+            /* flex-direction: row; /*Varsayılan olarak zaten flex ile satır olarak gelir */
+            /* flex-direction: column; /*Column ile her bir elemanı satır satır yapar. */
+            /* flex-direction: row-reverse ; Hem satır şeklinde hemde tersten sıralar */
+            /* flex-direction: column-reverse ; Ters şeklilde satır satır sıralar. */
+            
+            /*Flex-wrap ile container içinde 5 div olduğu varsayılarak. Tarayıcı küçülünce 5. item aşağı insin..*/    
+            /* flex-wrap: nowrap; Nowrap ile sayfa boyutu küçülse de itemler aşağı inmez */
+            /* flex-wrap: wrap; Bu özellikle 5. item küçüldükçe aşağı iner.. */
+            /* flex-wrap: wrap-reverse; 1'den 5'e kadar sıralanan itemlerde en sondaki yani item5'i sayfa küçülünce üste atar.. */
+            flex-flow: row wrap ; /*Flex-direction iel flex/wrap'in aynı anda kullanılan özelliğidir.*/
+            background-color: #034f84;
+            padding: 15px;
+        }
+        .item{
+            background-color: #f7786b;
+            padding: 30px;
+            margin: 20px;
+            color:#fff;
+            font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!--Flex yapacağız.-->
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+    </div>
+
+</body>
+</html>
